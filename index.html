@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahjong Eşleştirme</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <button class="round-btn" id="backBtn" aria-label="Geri">←</button>
+        <div class="score-wrap">
+          <span class="score" id="score">0</span>
+          <div class="tray" id="tray"></div>
+        </div>
+        <button class="round-btn" id="menuBtn" aria-label="Menü">☰</button>
+      </header>
+
+      <section class="board-area">
+        <div class="board" id="board"></div>
+      </section>
+
+      <footer class="bottombar">
+        <button class="action-btn" id="shuffleBtn">
+          <span class="icon">⤮</span>
+          <span class="label">Karıştır</span>
+        </button>
+        <button class="action-btn" id="hintBtn">
+          <span class="icon">💡</span>
+          <span class="label">İpucu</span>
+        </button>
+        <button class="action-btn" id="undoBtn">
+          <span class="icon">↩</span>
+          <span class="label">Geri Al</span>
+        </button>
+      </footer>
+    </main>
+
+    <div class="modal hidden" id="modal">
+      <div class="modal-card">
+        <h2 id="modalTitle">Tebrikler!</h2>
+        <p id="modalText">Bölümü tamamladın.</p>
+        <button id="restartBtn">Tekrar Oyna</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
